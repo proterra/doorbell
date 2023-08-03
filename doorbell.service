@@ -1,0 +1,12 @@
+[Unit]
+Description=Doorbell
+After=network.target
+
+[Service]
+Type=idle
+Restart=on-failure
+User=root
+ExecStart=/home/matthew/github.com/433Utils/RPi_utils/RFSniffer
+
+[Install]
+WantedBy=multi-user.target
